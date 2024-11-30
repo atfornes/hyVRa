@@ -36,21 +36,3 @@ if (!v) {
 	vrWrapper.appendChild(vr);
 	document.body.appendChild(vrWrapper);
 }
-
-
-	vrWrapper = document.createElement("div");
-	vrWrapper.id = "hyVRa";
-	vrWrapper.addEventListener("click", function(element) {
-		hyvra.adjustingVR = !hyvra.adjustingVR;
-	});
-
-
-	vr = document.createElement("i");
-	vr.id = "hyvra-icon";
-	vr.id = "vr-icon";
-	vr.title = "VR adjust";
-	vr.className = "fas icon fa-glasses";
-	vr.ariaHidden = true;
-	vrWrapper.appendChild(vr);
-	document.body.appendChild(vrWrapper);
-	console.log(vrWrapper);
