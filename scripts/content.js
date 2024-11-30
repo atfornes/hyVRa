@@ -1,13 +1,14 @@
 // HyVRa: VR hydra extension
-let hyvra = {
-	VRdistance: 0.641,
-	adjustingVR: true,
-	alpha: 0,
-	beta: 0,
-	gamma: 0
-};
+
 let v = window.document.getElementById("hyVRa");
 if (!v) {
+  let hyvra = {
+  	VRdistance: 0.641,
+  	adjustingVR: true,
+  	alpha: 0,
+  	beta: 0,
+  	gamma: 0
+  };
 	if (window.DeviceOrientationEvent) {
 		window.addEventListener('deviceorientation', function(event) {
 			hyvra.alpha = event.alpha;
