@@ -4,7 +4,7 @@ let v = window.document.getElementById("hyVRa");
 if (!v) {
   let hyvra = {
   	VRdistance: 0.641,
-  	adjustingVR: true,
+    adjustingVR: false,
   	alpha: 0,
   	beta: 0,
   	gamma: 0
@@ -26,6 +26,12 @@ if (!v) {
 		hyvra.adjustingVR = !hyvra.adjustingVR;
 	});
 
+  document.bodut.addEventListener("touchstart",()=>{
+    hyvra.adjustingVR: true,
+  })
+  document.bodut.addEventListener("touchend",()=>{
+    hyvra.adjustingVR: false,
+  })
 
 	vr = document.createElement("i");
 	vr.id = "hyvra-icon";
